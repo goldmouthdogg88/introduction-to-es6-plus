@@ -1,22 +1,13 @@
-// const addressMaker = (address) => {
-//   const newAddress = {
-//     city: address.city,
-//     state: address.state,
-//     country: "United States",
-//   };
-//   console.log(newAddress);
-// };
+// let incomes = [62000, 67000, 75000];
+// let total = 0;
 
-// addressMaker({ city: "Austin", state: "Texas" });
+// for (const income of incomes) {
+//   console.log(income);
+//   total += income;
+// }
 
-const addressMaker = (address) => {
-  const { city, state, country } = address;
-  const newAddress = {
-    city,
-    state,
-    country: "United States",
-  };
-  console.log(`${city} ${state} ${newAddress.country}`);
-};
+let fullName = "Dylan Coding God Israel";
 
-addressMaker({ city: "Austin", state: "Texas" });
+for (const char of fullName) {
+  console.log(char);
+}
