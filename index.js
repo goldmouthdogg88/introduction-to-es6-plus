@@ -1,13 +1,15 @@
-// let incomes = [62000, 67000, 75000];
-// let total = 0;
+// Challenge - For Of Loop
 
-// for (const income of incomes) {
-//   console.log(income);
-//   total += income;
-// }
+// Using the For of Loop, iterate through the array and print into the console, a message like:
+// Tom lives in Lisbon
 
-let fullName = "Dylan Coding God Israel";
+const students = [
+  { name: "John", city: "New York" },
+  { name: "Peter", city: "Paris" },
+  { name: "Kate", city: "Sidney" },
+];
 
-for (const char of fullName) {
-  console.log(char);
+for (const student of students) {
+  const { name, city } = student; // Object destructuring refer to branch 3
+  console.log(`${name} lives in ${city}`);
 }
