@@ -1,15 +1,21 @@
-// Challenge - For Of Loop
+let contacts = ["Mary", "Joel", "Danny"];
+// let personalFriends = contacts;
+let personalFriends = ["David", ...contacts, "Lily"]; // makes a new copy, maitains the concept of immitibility
 
-// Using the For of Loop, iterate through the array and print into the console, a message like:
-// Tom lives in Lisbon
+contacts.push("John");
 
-const students = [
-  { name: "John", city: "New York" },
-  { name: "Peter", city: "Paris" },
-  { name: "Kate", city: "Sidney" },
-];
+console.log(personalFriends);
 
-for (const student of students) {
-  const { name, city } = student; // Object destructuring refer to branch 3
-  console.log(`${name} lives in ${city}`);
-}
+let person = {
+  name: "Adam",
+  age: 25,
+  city: "Manchester",
+};
+
+let employee = {
+  ...person,
+  salary: 50000,
+  position: "Software Developer",
+};
+
+console.log(employee);
