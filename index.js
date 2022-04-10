@@ -1,23 +1,6 @@
-/*
-    **** Challenge ****
-    
-    For this challenge destruture the following object.
-*/
+// let names = ['Dylan', 'Coding God', 'Israel'];
+let [firstName, middleName, lastName] = ["Dylan", "Coding God", "Israel"];
 
-const student = {
-  name: "Kyle",
-  age: 24,
-  projects: {
-    diceGame: "Two player dice game using JavaScript",
-  },
-};
+lastName = "Clements";
 
-const {
-  name,
-  age,
-  projects: { diceGame },
-} = student;
-
-console.log(
-  `${name} is a shithead, age ${age}. Who gambles all his Mom's eth playing Russian ${diceGame}`
-);
+console.log(`${firstName} ${middleName} ${lastName}`);
