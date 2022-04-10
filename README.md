@@ -26,7 +26,7 @@ Core Es6+ featurs
 
 "1. Introduction to the ES6 course"
 "2. Template Literals"
-"3. Destructuring objects"
+"3. Destructuring objects" \*
 "4. Destructuring Objects (Challenge)"
 "5. Destructuring Arrays"
 "6. Object Literal"
