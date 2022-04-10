@@ -1,24 +1,23 @@
-const player = {
-  name: "Lebron James",
-  club: "LA Lakers",
-  address: {
-    city: "Los Angeles",
+/*
+    **** Challenge ****
+    
+    For this challenge destruture the following object.
+*/
+
+const student = {
+  name: "Kyle",
+  age: 24,
+  projects: {
+    diceGame: "Two player dice game using JavaScript",
   },
 };
 
-// console.log(player.address.city); old syntax
-
-// Object destructuring allows us, to
-// pass in name of keys you want to destructure to the curly braces
-
 const {
   name,
-  club,
-  address: { city },
-} = player;
+  age,
+  projects: { diceGame },
+} = student;
 
-// player.name
-// player.club
-
-console.log(`${name} plays for ${club}`);
-console.log(`${name} lives in ${city}`);
+console.log(
+  `${name} is a shithead, age ${age}. Who gambles all his Mom's eth playing Russian ${diceGame}`
+);
