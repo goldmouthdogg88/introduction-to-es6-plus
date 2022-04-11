@@ -1,4 +1,5 @@
-let example = "YouTube.com/CodingTutorials360";
+import { Animal, Cat } from "./animal.js";
 
-// console.log(example.padStart(100));
-// console.log(example.padEnd(1));
+// let cat = new Animal("Cat", 4);
+let cat = new Cat("Cat", 4);
+console.log(cat);
