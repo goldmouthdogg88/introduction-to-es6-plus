@@ -1,21 +1,20 @@
-let contacts = ["Mary", "Joel", "Danny"];
-// let personalFriends = contacts;
-let personalFriends = ["David", ...contacts, "Lily"]; // makes a new copy, maitains the concept of immitibility
+/*
+    **** Challenge ****
+    
+    Imagine you are going out to do some grocery shopping.
+    So you have an array called shoppingList with all the products you want to buy.
+    
+    Now that you are inside of the shop, you have a basket with all the products from your list, but you want to add a few more.
+    
+    Create a new array called shoppingBasket, that will be a copy of the shoppingList array, and add some new products into it. 
 
-contacts.push("John");
+*/
 
-console.log(personalFriends);
-
-let person = {
-  name: "Adam",
-  age: 25,
-  city: "Manchester",
-};
-
-let employee = {
-  ...person,
-  salary: 50000,
-  position: "Software Developer",
-};
-
-console.log(employee);
+const shoppingList = ["eggs", "milk", "butter"];
+const shoppingBasket = [
+  "red pepper hummus",
+  "cucumber",
+  "vinaigrette",
+  ...shoppingList,
+];
+console.log(shoppingBasket);
