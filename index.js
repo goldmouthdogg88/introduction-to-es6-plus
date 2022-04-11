@@ -1,16 +1,13 @@
-function add(...nums) {
-  console.log(arguments);
+//function declaration
+function breakfastMenu() {
+  return "I'm going to scrambled eggs for breakfast";
 }
 
-add(4, 5, 7, 8, 12);
+//anonymous function
+const lunchMenu = function () {
+  return "I'm going to eat pizza for lunch";
+};
 
-/*
+const dinnerMenu = (food) => `I'm going to eat a ${food} for dinner"`;
 
-  Gives us the ability to get the arugments out of our function, with (n) inputs.
-
-  add(4, 5, 7, 8, 12); -> 4
-  [Arguments] { '0': 4, '1': 5, '2': 7, '3': 8, '4': 12 }
-
-  Arguements has been deprecated by the rest operator.
-
-*/
+console.log(dinnerMenu("chicken salad"));
