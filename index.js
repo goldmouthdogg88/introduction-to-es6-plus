@@ -1,12 +1,5 @@
-import { add, subtract } from "./data.js";
+let example = "Dylan Israel";
 
-const add_result = add(2, 2);
-const subtract_result = subtract(5, 3);
-console.log(add_result, subtract_result);
+console.log(example.padStart(10, "a"));
 
-// * Instructor's Solution
-// import { add } from './data.js';
-
-// let result = add(3, 2);
-
-// console.log(result);
+console.log(example.padEnd(10, "a"));
