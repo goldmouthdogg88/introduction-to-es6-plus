@@ -1,5 +1,12 @@
-import { data } from "./example.js";
-let updateData = data;
+import { add, subtract } from "./data.js";
 
-updateData.push(5);
-console.log(updateData);
+const add_result = add(2, 2);
+const subtract_result = subtract(5, 3);
+console.log(add_result, subtract_result);
+
+// * Instructor's Solution
+// import { add } from './data.js';
+
+// let result = add(3, 2);
+
+// console.log(result);
