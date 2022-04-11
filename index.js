@@ -1,32 +1,8 @@
-// const photos = [];
+// sets
 
-// const photoUpload = async () => {
-//   let uploadStatus = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       photos.push("profile pic");
-//       resolve("photo uploaded");
-//     }, 3000);
-//   });
+const exampleSet = new Set([1, 1, 1, 1, 1, 2, 2, 2, 2, 1]);
+exampleSet.add(5).add(3);
 
-//   let result = await uploadStatus;
-//   console.log(result);
-//   console.log(photos.length);
-// };
-
-// photoUpload();
-
-//Challenge - Async & Await
-
-//Print on the console a random joke from the Chuck Norris API using Fetch and Async and Await
-
-import fetch from "node-fetch";
-
-const apiUrl = "https://api.chucknorris.io/jokes/random";
-
-const getJoke = async () => {
-  const response = await fetch(apiUrl);
-  const data = await response.json();
-  console.log(data["value"]);
-};
-
-getJoke();
+exampleSet.delete(5); // -> returns boolean
+console.log(exampleSet.has(5));
+console.log(exampleSet); // -> Set(2) { 1, 2 }
