@@ -1,20 +1,16 @@
+function add(...nums) {
+  console.log(arguments);
+}
+
+add(4, 5, 7, 8, 12);
+
 /*
-    **** Challenge ****
-    
-    Imagine you are going out to do some grocery shopping.
-    So you have an array called shoppingList with all the products you want to buy.
-    
-    Now that you are inside of the shop, you have a basket with all the products from your list, but you want to add a few more.
-    
-    Create a new array called shoppingBasket, that will be a copy of the shoppingList array, and add some new products into it. 
+
+  Gives us the ability to get the arugments out of our function, with (n) inputs.
+
+  add(4, 5, 7, 8, 12); -> 4
+  [Arguments] { '0': 4, '1': 5, '2': 7, '3': 8, '4': 12 }
+
+  Arguements has been deprecated by the rest operator.
 
 */
-
-const shoppingList = ["eggs", "milk", "butter"];
-const shoppingBasket = [
-  "red pepper hummus",
-  "cucumber",
-  "vinaigrette",
-  ...shoppingList,
-];
-console.log(shoppingBasket);
