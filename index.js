@@ -1,5 +1,4 @@
-let example = "Dylan Israel";
+let example = "YouTube.com/CodingTutorials360";
 
-console.log(example.padStart(10, "a"));
-
-console.log(example.padEnd(10, "a"));
+// console.log(example.padStart(100));
+// console.log(example.padEnd(1));
